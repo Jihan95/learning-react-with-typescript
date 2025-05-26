@@ -1,0 +1,66 @@
+// ** Default
+$defaultBg: rgba(240, 240, 240, 0.8);       // soft gray background
+$defaultColor: #333333;                     // dark gray text
+$defaultBorder: #b0b0b0;                    // medium gray border
+
+// ** Info
+$infoBg: rgba(100, 108, 255, 0.1);          // soft blue background
+$infoColor: #1a237e;                        // deep indigo text
+$infoBorder: #646cff;                       // keep consistent vibrant border
+
+// ** Warning
+$warningBg: rgba(255, 221, 118, 0.2);       // pale amber background
+$warningColor: #a15c00;                     // dark amber text
+$warningBorder: rgba(255, 166, 0, 0.6);     // softer border tone
+
+// ** Error
+$errorBg: rgba(255, 0, 0, 0.08);            // light red background
+$errorColor: #a10e1a;                       // deep red text
+$errorBorder: rgba(220, 53, 69, 0.35);      // match with border tone from earlier
+
+// ** Success
+$successBg: rgba(198, 239, 206, 0.4);       // soft green background
+$successColor: #256029;                     // strong green text
+$successBorder: rgba(40, 167, 69, 0.4);     // standard success green border
+
+
+@mixin alert($name, $bg, $color, $border) {
+    .#{$name} {
+    border: 2px dotted $border;
+    border-radius: 0.8rem;
+    padding: 1.3rem;
+    background-color: $bg;
+    color: $color;
+    margin: 2rem;
+
+    .alert-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;        }
+        span svg {
+            margin-right: 0.6rem;
+        }
+        .close {
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-top: 1.2rem;
+    }
+}
+
+}
+
+@include alert("alert-default", $defaultBg, $defaultColor, $defaultBorder);
+@include alert("alert-info", $infoBg, $infoColor, $infoBorder);
+@include alert("alert-warning", $warningBg, $warningColor, $warningBorder);
+@include alert("alert-error", $errorBg, $errorColor, $errorBorder);
+@include alert("alert-success", $successBg, $successColor, $successBorder);

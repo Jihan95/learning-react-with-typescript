@@ -1,33 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BellRing, Ban, CheckCheck, Info, OctagonX} from 'lucide-react'
 import './App.css'
+import Alert from './assets/components/ui/Alert/alert'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Alert type='alert-error' icon={<Ban size={20}/>}
+    title="Something Went Wrong"
+    description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
+    />
+    <Alert type='alert-info' icon={<Info size={20}/>}
+    title="Info"
+    description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
+    />
+    <Alert type='alert-success' icon={<CheckCheck size={20}/>}
+    title="order has been done"
+    description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
+    />
+    <Alert type='alert-warning' icon={<OctagonX size={20}/>}
+    title="order has been done"
+    description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
+    />
+    <Alert type='alert-default' icon={<BellRing size={20}/>}
+    title="order has been done"
+    description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
+    />
     </>
   )
 }
