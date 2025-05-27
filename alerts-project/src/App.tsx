@@ -19,11 +19,11 @@ function App() {
     description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
     />
     <Alert type='alert-warning' icon={<OctagonX size={20}/>}
-    title="order has been done"
+    title="warning"
     description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
     />
     <Alert type='alert-default' icon={<BellRing size={20}/>}
-    title="order has been done"
+    title="keep in mind"
     description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dolorum sapiente reprehenderit, facere ut voluptas aliquam a ex omnis, ratione laborum voluptates numquam adipisci velit ullam dolorem saepe! Sunt, magnam.'
     />
     </>

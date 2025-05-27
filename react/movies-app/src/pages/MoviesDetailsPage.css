@@ -1,0 +1,55 @@
+.movie-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.movie-hero {
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 1rem;
+    color: rgb(135, 88, 205);
+    font-weight: bold;
+}
+
+.movie-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.poster-section {
+    flex: 1;
+}
+
+.info-section {
+    flex: 2;
+}
+
+.detail-poster {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.genre-tag {
+    display: inline-block;
+    background: rgb(135, 88, 205);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}

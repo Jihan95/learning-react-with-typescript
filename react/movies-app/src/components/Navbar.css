@@ -1,0 +1,26 @@
+.navbar-container a {
+    all: unset;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color:  rgb(135, 88, 205);
+    border-radius: 10px;
+    padding: 1rem;
+    /* color: #ffe600;
+    text-decoration: none; */
+    font-weight: bold;
+    font-size: x-large;
+    margin: 1.5rem;
+}
+
+.navbar-container a:hover {
+    color: lightgray;           /* Optional: color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
