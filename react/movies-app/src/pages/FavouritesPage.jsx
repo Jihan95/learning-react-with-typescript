@@ -33,4 +33,4 @@ const FavouritesPage = () => {
     );
 }
 
-export default FavouritesPage;
+export default FavouritesPage

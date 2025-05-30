@@ -8,7 +8,11 @@ const MovieCard = ({id, title, poster_path, overview, vote_average, release_date
         padding: "10px",
         borderRadius: "8px",
         width: "350px",
-        color: "white"
+        color: "white",
+        height: "600px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between"
     }
 
     const posterUrl = poster_path 
@@ -24,7 +28,14 @@ const MovieCard = ({id, title, poster_path, overview, vote_average, release_date
                 <pre>
 
                 </pre>
-                <p> {overview} </p>
+                <p style={{
+                        flexGrow: 1,
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        display: "-webkit-box",
+                        WebkitLineClamp: 4,  // Change this to how many lines you want
+                        WebkitBoxOrient: "vertical"
+                    }}> {overview} </p>
                 <div className="movie-info">
                     <p>★ {vote_average}/10</p>
                     <p> Release Date: {new Date(release_date).toLocaleDateString()}</p>
