@@ -1,55 +1,88 @@
 .movie-details-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    color: white;
+    margin: 1.5rem;
+}
+
+.movie-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
 }
 
 .movie-hero {
-    height: 400px;
+    height: 400px; /* reduced from 400px */
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
-}
-
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-}
-
-.back-button {
-    display: inline-block;
-    margin: 1rem;
-    color: rgb(135, 88, 205);
-    font-weight: bold;
-}
-
-.movie-content {
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-}
-
-.poster-section {
-    flex: 1;
-}
-
-.info-section {
-    flex: 2;
-}
-
-.detail-poster {
-    width: 100%;
     border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hero-meta {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #B3B3B3;
+}
+
+.rating {
+    color: #F5C518;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.release-date {
+    color: #B3B3B3;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.overview {
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.language,
+.popularity {
+    color: #B3B3B3;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.genre-list {
+    margin-top: 0.5rem;
 }
 
 .genre-tag {
-    display: inline-block;
-    background: rgb(135, 88, 205);
+    background: #BB86FC;
+    color: #121212;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.favorite-button {
+    background-color: #E50914;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.favorite-button:hover {
+    background-color: #b00610;
 }

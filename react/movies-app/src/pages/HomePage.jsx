@@ -6,7 +6,6 @@ const HomePage = () => {
         <div className="hero-section">
                 <h1>Welcome to MovieVerse</h1>
                 <p><i><strong>Discover your next favorite film</strong></i></p>
-                <Link to="/movies" className="cta-button">Browse Movies</Link>
         </div>
     );
 }

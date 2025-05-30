@@ -10,13 +10,11 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background-color:  rgb(135, 88, 205);
+    background-color:  #E50914;
     border-radius: 10px;
     padding: 1rem;
-    /* color: #ffe600;
-    text-decoration: none; */
     font-weight: bold;
-    font-size: x-large;
+    font-size: large;
     margin: 1.5rem;
 }
 

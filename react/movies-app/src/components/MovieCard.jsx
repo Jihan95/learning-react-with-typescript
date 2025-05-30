@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const MovieCard = ({id, title, poster_path, overview, vote_average, release_date}) => {
     let styleObject = {
-        backgroundColor: "rgb(135, 88, 205)",
+        backgroundColor: "#1E1E1E",
         margin: "20px",
         padding: "10px",
         borderRadius: "8px",
@@ -30,7 +30,16 @@ const MovieCard = ({id, title, poster_path, overview, vote_average, release_date
                     <p> Release Date: {new Date(release_date).toLocaleDateString()}</p>
                 </div>
                 <Link to={`/movies/${id}`}>
-                <button style={{ width: "100%", padding: "8px", marginTop: "10px" }}>See More</button>
+                <button style={{ 
+                    width: "100%",
+                    padding: "8px",
+                    marginTop: "10px",
+                    backgroundColor:"#E50914",
+                    borderColor: "#E50914",
+                    borderRadius: "5px",
+                    }}>
+                    See More
+                </button>
                 </Link>
             </div>
         </div>

@@ -1,17 +1,10 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
 import MovieCard from '../components/MovieCard';
+import { useContext } from 'react';
+import { moviesContext } from '../contexts/MoviesContextProvider';
 import './MoviesPage.css';
 
 const MoviesPage = () => {
-    const apiUrl = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=9813ce01a72ca1bd2ae25f091898b1c7";
-    const [movies, setMovies] = useState([]);
-
-    useEffect(() => {
-        axios.get(apiUrl)
-            .then(res => setMovies(res.data.results))
-            .catch(err => console.error("Error fetching movies:", err));
-    }, []);
+    const movies = useContext(moviesContext);
 
     return (
         <div>
